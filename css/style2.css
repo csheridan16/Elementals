@@ -1,0 +1,545 @@
+body{background-color: #E0E0E2;
+     margin: 0;}
+
+#wrapper{background-color: black;
+     margin: 0;}
+
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
+/* ------------animations for links------------- */
+
+
+/* Grow Rotate */
+.hvr-grow-rotate {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-grow-rotate:hover, .hvr-grow-rotate:focus, .hvr-grow-rotate:active {
+  -webkit-transform: scale(1.1) rotate(4deg);
+  transform: scale(1.1) rotate(4deg);
+}
+
+/* Overline From Left */
+.hvr-overline-from-left {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+.hvr-overline-from-left:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  top: 0;
+  background: #ffffff;
+  height: 4px;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-overline-from-left:hover:before, .hvr-overline-from-left:focus:before, .hvr-overline-from-left:active:before {
+  right: 0;
+}
+/*------------------ contact  ---------------*/
+
+#contact{background-color: 232323;
+         padding: 5em;}
+
+/*------------------ Navigation 2  ---------------*/
+#navigation2{    
+    background-color: #232323;      
+    display: grid;
+    grid-template-columns: 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5%;  
+
+  }
+
+.logo1{grid-column: 2/3;
+     margin-top: 10px;
+     margin-bottom: 10px;
+     width: 5em;
+     padding-left: 10px;
+    }
+
+#nav2{
+     margin-top: 15px;
+     margin-bottom: 0px;
+     text-align: left;
+    }
+
+#navigation2 ul li{ 
+    display: inline-block;
+ }
+
+div#navigation2 ul li a{
+  border-right: 3px solid #ffffff;    
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: 'Bubblegum Sans', cursive; }
+
+/*------------------ Navigation  ---------------*/
+#navigation{    
+    background-color: #232323;      
+    display: grid;
+    grid-template-columns: 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5%;  
+
+  }
+
+.logo1{grid-column: 2/3;
+     margin-top: 10px;
+     margin-bottom: 10px;
+     width: 5em;
+     padding-left: 10px;
+    }
+
+#nav{
+     margin-top: 15px;
+     margin-bottom: 0px;
+     text-align: left;
+    }
+
+#navigation ul li{ 
+    display: inline-block;
+ }
+
+div#navigation ul li a{
+  border-right: 3px solid #ffffff;    
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: 'Bubblegum Sans', cursive; }
+
+/*------------------ Fonts  ---------------*/
+
+h2{font-family: 'Bubblegum Sans', cursive;
+   color: #ffffff; 
+   font-size: 5em;
+   margin: 0;
+    
+}
+
+h3{font-family: 'Bubblegum Sans', cursive;
+   color: #e49600; 
+   font-size: 3em;
+   margin: 0;
+   text-align: center;    
+    
+}
+
+h4{font-family: 'Bubblegum Sans', cursive;
+   color: #232323; 
+   margin: 0;
+   text-align: center;
+    
+    
+}
+
+p{font-family: 'Bubblegum Sans', cursive;
+   color: #ffffff; 
+   font-size: 3em;
+   padding-left: 10px;
+   padding-right: 10px;
+   margin-bottom: 0px;    
+   margin-top: 0px;    
+    
+}
+
+p1{font-family: 'Bubblegum Sans', cursive;
+   color: #000000; 
+}
+
+p2{font-family: 'Bubblegum Sans', cursive;
+   text-align: center; 
+   color: #000000; 
+    
+      
+}
+
+p4{font-family: 'Bubblegum Sans', cursive;
+   color: #000000; 
+   padding-left: 10px;
+   padding-right: 10px;
+   margin-bottom: 0px;    
+   margin-top: 0px;    
+    
+}
+
+
+
+
+
+/*------------------ for speechbubble  ---------------*/
+
+.speech-bubble {
+	position: relative;
+	background: #ffffff;
+	border-radius: .4em;
+    margin-left: 10em; 
+    margin-right: 10em; 
+}
+
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 47px solid transparent;
+	border-top-color: #ffffff;
+	border-bottom: 0;
+	border-left: 0;
+	margin-left: -23.5px;
+	margin-bottom: -47px;
+}
+
+/*------------------ Element breakdown section  ---------------*/
+
+#elementinfo{ margin: 0;
+              background-color: #232323;}
+
+#introsection{ margin: 0;
+               grid-template-columns: 50% 50%;}
+
+.intropic {grid-column-start: 2;}
+ 
+
+/*------------------ Grid for element pages  -------------------------------------------------------------*/
+
+#layout{
+  background: #E0E0E2;    
+  display: grid;
+  grid-template-columns:  1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1%;
+  grid-template-rows: 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1%;  
+}
+
+.layoutitem1 {   
+  grid-column-start: 40;
+  grid-column-end: 10;
+  grid-row-start: 1;
+  grid-row-end: 40;
+     
+      
+}
+
+.layoutitem2 {      
+  grid-column-start: 50;
+  grid-column-end: 76; 
+  grid-row-start: 5;
+  grid-row-end: 6;     
+}
+
+.layoutitem3 {   
+  grid-column-start: 50;
+  grid-column-end: 90; 
+  grid-row-start: 15;
+  grid-row-end: 16;     
+}
+
+.layoutitem4 {   
+  grid-column-start: 50;
+  grid-column-end: 90; 
+  grid-row-start: 25;
+  grid-row-end: 26;     
+}
+
+.layoutitem5 {   
+  grid-column-start: 50;
+  grid-column-end: 85; 
+  grid-row-start: 35;
+  grid-row-end: 36;     
+}
+
+.layoutitem6 {   
+  grid-column-start: 5;
+  grid-column-end: 100; 
+  grid-row-start: 66;
+  grid-row-end: 67;     
+}
+
+
+/*------------------ Grid for periodic table  ---------------*/
+
+#gridfortable{
+  background: #eee;    
+  display: grid;
+  grid-template-columns: 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1%;
+  grid-template-rows: 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1%;  
+}
+
+.periodictable {
+  z-index: 1;    
+  grid-column-start: 6;
+  grid-column-end:100;  
+     
+  
+}
+
+.sodium {
+  background: #ffffff;
+  z-index: 2;    
+  grid-column-start: 19;
+  grid-column-end: 23;
+  grid-row-start: 18;
+  grid-row-end: 20;   
+  
+}
+
+.caesium {
+
+  z-index: 2;    
+  grid-column-start: 19;
+  grid-column-end: 23;
+  grid-row-start: 35;
+   
+  
+}
+
+.hydrogen {
+  background: #ffffff;
+  z-index: 2;    
+  grid-column-start: 43;
+  grid-column-end: 47;
+  grid-row-start: 5;   
+  
+}
+
+.mercury {
+  background: #ffffff;
+  z-index: 2;    
+  grid-column-start: 62;
+  grid-column-end: 66;
+  grid-row-start: 36;
+  grid-row-end: 36;   
+  
+}
+
+.boron {
+  background: #ffffff;
+  z-index: 2;    
+  grid-column-start: 66;
+  grid-column-end: 70;
+  grid-row-start: 12;
+  grid-row-end: 13;   
+  
+}
+
+#Clickhere{ margin: 0;
+           background-color: #232323;}
+
+/*---------------------------------------------------- media queries --------------------*/
+
+/*------------------ gridfortable --------------------*/
+
+@media screen and (max-width: 600px) {
+  #gridfortable {
+  margin-bottom: -7em;     
+  }
+}
+
+@media screen and (min-width: 601px) {
+  #gridfortable {
+  margin-bottom: -12em;     
+  }
+}
+
+@media screen and (min-width: 1001px) {
+  #gridfortable {
+  margin-bottom: -19em;      
+  }
+}
+
+/*----------------------H2--------------------------------*/
+
+@media screen and (max-width: 600px) {
+  h2{font-size: 2em; 
+     text-align: center;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  h2{font-size: 3em;
+  text-align: center;      
+  }
+}
+
+@media screen and (min-width: 1001px) {
+  h2{font-size: 5em; 
+     text-align: center;  
+  }
+}
+
+/*----------------------p--------------------------------*/
+
+@media screen and (max-width: 600px) {
+  p{font-size: 13px; 
+     text-align: center;
+     padding-left: 10px;
+     padding-right: 10px;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  p{font-size: 40px;
+  text-align: center;      
+  }
+}
+
+@media screen and (min-width: 1001px) {
+  p{font-size: 3em; 
+     text-align: center;  
+  }
+}
+
+   font-size: 3em;
+
+@media screen and (max-width: 600px) {
+  p4{font-size: 13px; 
+     text-align: center;
+     padding-left: 10px;
+     padding-right: 10px;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  p4{font-size: 40px;
+  text-align: center;      
+  }
+}
+
+@media screen and (min-width: 1001px) {
+  p4{font-size: 3em;
+     text-align: center;  
+  }
+}
+
+
+
+/*-----navigation--*/
+    
+@media screen and (max-width: 600px) {
+  #navigation{
+              width: 100%;      
+  }
+}
+
+    
+    
+/*-----------------nav--------------*/
+    
+@media screen and (max-width: 600px) {
+  #nav{font-size: 18px;
+       grid-column: 4/21;
+       }
+}
+
+@media screen and (min-width: 601px) {
+  #nav{font-size: 25px;
+       grid-column: 7/21;
+  }
+}
+
+@media screen and (min-width: 1001px) {
+  #nav{font-size: 25px;
+       grid-column: 13/21;
+  }
+}
+/*-----------------nav 2--------------*/
+    
+@media screen and (max-width: 600px) {
+  #nav2{font-size: 20px;
+       grid-column: 17/21;
+       }
+}
+
+@media screen and (min-width: 601px) {
+  #nav2{font-size: 25px;
+       grid-column: 18/21;
+  }
+}
+
+@media screen and (min-width: 1001px) {
+  #nav2{font-size: 30px;
+       grid-column: 18/21;
+  }
+}
+
+/*----------------------H4--------------------------------*/
+
+@media screen and (max-width: 600px) {
+  h4{font-size: 3em; 
+     text-align: center;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  h4{font-size: 5em;
+  text-align: center;      
+  }
+}
+
+@media screen and (min-width: 1001px) {
+  h4{font-size: 7em; 
+     text-align: center;
+      margin-top: -80px;
+  }
+}
+
+/*----------------------element pages--------------------------------*/
+
+@media screen and (max-width: 600px) {
+  p1{font-size: 1em; 
+     text-align: center;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  p1{font-size: 2em;
+  text-align: center;      
+  }
+}
+
+@media screen and (min-width: 1001px) {
+  p1{font-size: 3em; 
+  }
+}
+
+/*----------------------element pages---------------------------------------------------------------*/
+
+@media screen and (max-width: 600px) {
+  p2{font-size: 1em; 
+     text-align: center;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  p2{font-size: 2em;
+  text-align: center;
+  padding-top: 2em;      
+  }
+}
+
+@media screen and (min-width: 1001px) {
+  p2{font-size: 3em; 
+  }
+}
+
+
